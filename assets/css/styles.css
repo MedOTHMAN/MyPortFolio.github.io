@@ -375,7 +375,6 @@ img {
   border-radius: .5rem;
   overflow: hidden;
 }
-
 .work__img img {
   transition: 1s;
   cursor: pointer;
@@ -383,7 +382,11 @@ img {
 
 .work__img img:hover {
   transform: scale(1.1);
-}
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1); 
+ }
 
 /* ===== CONTACT =====*/
 .contact__input {
@@ -532,4 +535,20 @@ img {
   .home__img {
     right: 10%;
   }
+}
+
+/* .work__img span,img:hover {
+  img{
+    filter: opacity(15%) contrast(150%);
+
+  }
+  visibility: visible;
+}
+ */
+.span-modif {
+  position:absolute;
+  width:100%;
+  border:1px solid black;
+  bottom: 2px;
+  visibility: hidden;
 }
