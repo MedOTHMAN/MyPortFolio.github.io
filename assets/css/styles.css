@@ -409,6 +409,9 @@ img {
    transition: ease-in-out 1s transform ;
    line-height: 20px;
 }
+.modif p {
+  font-size: 10px;
+}
 .work__img:hover .modif{
   transform: translateY(0%);
 }
